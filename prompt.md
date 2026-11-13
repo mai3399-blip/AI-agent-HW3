@@ -4,7 +4,7 @@ Build a Google Colab notebook named `support_ticket_router.ipynb` that classifie
 
 ## Setup
 
-Install dependencies with `!pip -q install langgraph langchain-openai`. Use `ChatOpenAI` with `gpt-6-luna` and `temperature=0`. Define the model name once. This classification task is simple enough for a low-cost model.
+Install dependencies with `!pip -q install langgraph langchain-openai`. Use `ChatOpenAI` with `gpt-4.1-mini` and `temperature=0`. Define the model name once. This classification task is simple enough for a low-cost model. The previous model did not support setting `temperature=0`, so use `gpt-4.1-mini` to keep that setting. Set `max_retries=0`.
 
 Read the key from Colab Secrets using:
 
